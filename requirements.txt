@@ -42,6 +42,7 @@ frozendict==2.3.9
 geographiclib==2.0
 geopy==2.4.1
 greenlet==3.0.2
+gspread
 gunicorn==22.0.0
 h11==0.14.0
 html5lib==1.1

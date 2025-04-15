@@ -76,6 +76,7 @@ df = df[df['Date of Activity'].dt.month == 3]
 
 # Get the reporting month:
 current_month = datetime(2025, 3, 1).strftime("%B")
+report_year = datetime(2025, 3, 1).strftime("%Y")
 # -------------------------------------------------
 # print(df)
 # print(df[["Date of Activity", "Total travel time (minutes):"]])
@@ -1323,11 +1324,12 @@ html.Div(
 print(f"Serving Flask app '{current_file}'! 🚀")
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=
+                   True)
                 #    False)
 # =================================== Updated Database ================================= #
 
-# updated_path = 'data/mc_mar_2025.xlsx'
+# updated_path = f'data/MarCom_{current_month}_{report_year}.xlsx'
 # data_path = os.path.join(script_dir, updated_path)
 # df.to_excel(data_path, index=False)
 # print(f"DataFrame saved to {data_path}")
